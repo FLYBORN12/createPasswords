@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./final.css">
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="mt-5">
+                <div class="shadow-sm sm:rounded-md">
+                    <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                        <p class="text-base font-medium text-gray-900">Configura tu contraseña</p>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="withOutNumbers" type="checkbox"
+                                        class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="withOutNumbers" class="font-medium text-gray-700">Sin Numeros?</label>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="withOutSymbols" type="checkbox"
+                                        class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="withOutSymbols" class="font-medium text-gray-700">Sin Simbolos?</label>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="withOutCaps" type="checkbox"
+                                        class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="withOutCaps" class="font-medium text-gray-700">Sin Mayusculas?</label>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="quantityCharacters" type="number" min="6" max="20" value="6"
+                                        class="h-5 w-10 text-indigo-600 outline outline-indigo-600 outline-1 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="quantityCharacters" class="font-medium text-gray-700">Cantidad Caracteres</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex px-4 py-3 bg-gray-50 text-right sm:px-6">
+                        <button
+                            id="createPass"
+                            class="mx-1 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            Crear
+                        </button>
+                        <input 
+                            id="outputPass"
+                            type="text" readonly
+                            class="mx-1 outline outline-indigo-600 outline-1 w-full pl-7 pr-12 sm:text-sm rounded-lg"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../index.js"></script>
+<script src="./createPass.js"></script>
+</html>
