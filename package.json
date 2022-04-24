@@ -12,15 +12,31 @@
   "author": "jaunfe",
   "license": "ISC",
   "build": {
-    "appId": "juangeneratorpassword",
-    "productName": "proyectPass",
-    "target": "NSIS",
-    "directory":{
-      "output": "build"
+    "appId": "juancreatorPassword",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
     },
-    "nsis":{
-      "allowToChangeInstallationDirectory": true,
-      "oneClick":false
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
     }
   },
   "devDependencies": {
